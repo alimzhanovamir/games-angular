@@ -1,0 +1,37 @@
+.total {
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 0;
+  list-style: none;
+}
+
+.list__item {
+  width: calc(25% - 30px);
+  margin: 0 15px 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.item__image {
+  flex-grow: 1;
+  margin-bottom: 15px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.item__name {
+  text-align: center;
+}
+

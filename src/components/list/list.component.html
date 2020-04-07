@@ -1,3 +1,11 @@
-<ul class="list" *ngIf="list">
-  <li class="list__item" *ngFor="let item of list">{{ item }}</li>
+<div class="total">{{ total }}</div>
+<ul class="list" *ngIf="games">
+  <li class="list__item" *ngFor="let game of games">
+    <div class="item">
+      <div class="item__image">
+        <img src="{{ game.ImageFullPath }}" alt="">
+      </div>
+      <div class="item__name">{{ game.Name.en }}</div>
+    </div>
+  </li>
 </ul>
